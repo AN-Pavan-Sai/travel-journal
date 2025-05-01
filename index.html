@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Journal</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Travel Journal</h1>
+            <p>Share your experience about your journey around the world!</p>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg" id="myNavbar">
+        <div class="container">
+           
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h2>Explore travel stories, photos, and tips. Join us for the adventures around the world!</h2>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2>Travel Gallery</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/237/400/300" class="card-img-top" alt="Travel 1">
+                            <div class="card-body">
+                                <h3 class="card-title">Paris, France</h3>
+                                <p class="card-text">Enjoyed the beautiful Eiffel Tower and French cuisine.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/238/400/300" class="card-img-top" alt="Travel 2">
+                            <div class="card-body">
+                                <h3 class="card-title">Tokyo, Japan</h3>
+                                <p class="card-text">Experienced the vibrant culture and delicious sushi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/239/400/300" class="card-img-top" alt="Travel 3">
+                            <div class="card-body">
+                                <h3 class="card-title">Rome, Italy</h3>
+                                <p class="card-text">Visited the historic Colosseum and enjoyed Italian gelato.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/240/400/300" class="card-img-top" alt="Travel 4">
+                            <div class="card-body">
+                                <h3 class="card-title">Banff, Canada</h3>
+                                <p class="card-text">Explored the stunning Rocky Mountains and turquoise lakes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/241/400/300" class="card-img-top" alt="Travel 5">
+                            <div class="card-body">
+                                <h3 class="card-title">Machu Picchu, Peru</h3>
+                                <p class="card-text">Hiked the Inca Trail to the mysterious Machu Picchu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card">
+                            <img src="https://picsum.photos/id/242/400/300" class="card-img-top" alt="Travel 6">
+                            <div class="card-body">
+                                <h3 class="card-title">Santorini, Greece</h3>
+                                <p class="card-text">Witnessed the breathtaking sunsets over the Aegean Sea.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="share-experience" class="section">
+            <div class="container">
+                <form id="experienceForm" novalidate>
+                    <h3>Share Your Travel Experience</h3>
+                    <div class="form-group">
+                        <label for="destination">Destination:</label>
+                        <input type="text" class="form-control" id="destination" name="destination" required>
+                        <div class="invalid-feedback">Please enter your destination.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="travelDate">Date of Travel:</label>
+                        <input type="date" class="form-control" id="travelDate" name="travelDate" required>
+                        <div class="invalid-feedback">Please enter your travel date.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Your Experience:</label>
+                        <textarea class="form-control" id="experience" name="experience" required></textarea>
+                        <div class="invalid-feedback">Please share your travel experience.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Upload Photo:</label>
+                        <input type="file" class="form-control-file" id="photo" name="photo" accept="image/*">
+                        <small class="form-text text-muted">Optional: Upload a photo from your trip.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <div id="message" class="mt-3 alert alert-success" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Travel Journal. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
