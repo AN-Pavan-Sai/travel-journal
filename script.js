@@ -3,8 +3,8 @@
     window.addEventListener(
         "load",
         function () {
-            var forms = document.getElementsByClassName("needs-validation");
-            var validation = Array.prototype.filter.call(forms, function (form) {
+            let forms = document.getElementsByClassName("needs-validation");
+            let validation = Array.prototype.filter.call(forms, function (form) {
                 form.addEventListener(
                     "submit",
                     function (event) {
@@ -13,12 +13,12 @@
                             event.stopPropagation();
                         } else {
                             event.preventDefault();
-                            var destination = document.getElementById("destination").value;
-                            var travelDate = document.getElementById("travelDate").value;
-                            var experience = document.getElementById("experience").value;
-                            var photo = document.getElementById("photo").value;
+                            let destination = document.getElementById("destination").value;
+                            let travelDate = document.getElementById("travelDate").value;
+                            let experience = document.getElementById("experience").value;
+                            let photo = document.getElementById("photo").value;
 
-                            var message =
+                            let message =
                                 "Thank you for sharing your travel experience!" +
                                 "<br>Destination: " +
                                 destination +
